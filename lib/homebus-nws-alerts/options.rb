@@ -1,6 +1,6 @@
 require 'homebus/options'
 
-class NWSAlertsHomebusAppOptions < Homebus::Options
+class HomebusNWSAlerts::Options < Homebus::Options
   def app_options(op)
   end
 

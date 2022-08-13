@@ -7,7 +7,7 @@ require 'open-uri'
 require 'json'
 require 'time'
 
-class NWSAlertsHomebusApp < Homebus::App
+class HomebusNWSAlerts::App < Homebus::App
   DDC_ALERT = 'org.homebus.experimental.alert'
 
   NWS_ALERT_API_ENDPOINT = 'https://api.weather.gov/alerts'

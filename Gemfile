@@ -1,4 +1,6 @@
 source 'https://rubygems.org'
 
-gem 'homebus', git: 'https://github.com/HomeBusProjects/ruby-homebus'
+gemspec
+
+gem 'homebus', '>=0.30.1', git: 'https://github.com/HomeBusProjects/ruby-homebus', branch: 'main'
 gem 'dotenv'

@@ -1,14 +1,20 @@
 GIT
   remote: https://github.com/HomeBusProjects/ruby-homebus
-  revision: 4087b9cf2a5c1ead0304eb985618e0c1c0982cd1
+  revision: 661869af13158790a1cb6aa71357c9c3926c85bb
+  branch: main
   specs:
-    homebus (0.10.13)
+    homebus (0.30.1)
       mqtt (~> 0.5.0)
+
+PATH
+  remote: .
+  specs:
+    homebus-nws-alerts (0.2.0)
 
 GEM
   remote: https://rubygems.org/
   specs:
-    dotenv (2.7.6)
+    dotenv (2.8.1)
     mqtt (0.5.0)
 
 PLATFORMS
@@ -17,7 +23,8 @@ PLATFORMS
 
 DEPENDENCIES
   dotenv
-  homebus!
+  homebus (>= 0.30.1)!
+  homebus-nws-alerts!
 
 BUNDLED WITH
    2.2.31

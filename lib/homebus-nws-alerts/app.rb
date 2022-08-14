@@ -60,7 +60,7 @@ class HomebusNWSAlerts::App < Homebus::App
       event: alert[:event],
       certainty: alert[:certainty],
       severity: alert[:severity],
-      ends: DateTime.parse(alert[:ends]).to_time.to_i,
+      ends: DateTime.parse(alert[:expires]).to_time.to_i,
       description: alert[:description],
       instruction: alert[:instruction]
     }

@@ -10,7 +10,7 @@ Gem::Specification.new do |spec|
 
   spec.summary = 'Homebus publisher for NWS Weather alerts'
   spec.description = 'Invoked as a Homebus webhook, publishes weather alerts from the US National Weather Service'
-  spec.homepage = 'https://github.com/HomeBusProjects/homebus-ctrlh-access'
+  spec.homepage = 'https://github.com/HomeBusProjects/homebus-nws-alerts'
   spec.license = 'MIT'
   spec.required_ruby_version = '>= 2.7.4'
 
@@ -19,7 +19,6 @@ Gem::Specification.new do |spec|
 #  spec.metadata['changelog_uri'] = 'TODO: Put your gem's CHANGELOG.md URL here.'
 
   all_files  = `git ls-files`.split($INPUT_RECORD_SEPARATOR)
-puts all_files
   spec.files = all_files.grep(%r!^(exe|lib|rubocop)/|^.rubocop.yml$!)
   spec.executables   = all_files.grep(%r!^exe/!) { |f| File.basename(f) }
   spec.bindir        = 'exe'

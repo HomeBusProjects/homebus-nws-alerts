@@ -1,9 +1,9 @@
 #!/usr/bin/env ruby
 
-require '../lib/homebus-nws-alerts/options'
-require '../lib/homebus-nws-alerts/app'
+require 'homebus-nws-alerts/options'
+require 'homebus-nws-alerts/app'
 
-nwsalerts_app_options = HomebusNWSAlertsOptions.new
+nwsalerts_app_options = HomebusNWSAlerts::Options.new
 
-nwsalerts = HomebusNWSAlerts.new nwsalerts_app_options.options
+nwsalerts = HomebusNWSAlerts::App.new nwsalerts_app_options.options
 nwsalerts.run!

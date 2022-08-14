@@ -81,13 +81,11 @@ class HomebusNWSAlerts::App < Homebus::App
     alerts = []
     a.each { |b| alerts.push(_rewrite_alert( b[:properties])) }
 
-    if alerts.length > 0
-      if options[:verbose]
-        pp alerts
-      end
-
-      @device.publish! DDC_ALERT, alerts
+    if options[:verbose]
+      pp alerts
     end
+
+    @device.publish! DDC_ALERT, alerts
 
     sleep update_interval
   end

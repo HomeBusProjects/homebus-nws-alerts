@@ -1,21 +1,21 @@
 GIT
   remote: https://github.com/HomeBusProjects/ruby-homebus
-  revision: f0fff8e41734fee104259ee626e257a0cadd2eff
+  revision: 400534a58fab1b9537002aa9620e9afc77df8f08
   branch: main
   specs:
-    homebus (0.30.2)
-      mqtt (~> 0.5.0)
+    homebus (0.40.0)
+      paho-mqtt (~> 1.0.12)
 
 PATH
   remote: .
   specs:
-    homebus-nws-alerts (0.2.0)
+    homebus-nws-alerts (0.2.1)
 
 GEM
   remote: https://rubygems.org/
   specs:
     dotenv (2.8.1)
-    mqtt (0.5.0)
+    paho-mqtt (1.0.12)
 
 PLATFORMS
   arm64-darwin-20
@@ -23,7 +23,7 @@ PLATFORMS
 
 DEPENDENCIES
   dotenv
-  homebus (>= 0.30.1)!
+  homebus (>= 0.40.0)!
   homebus-nws-alerts!
 
 BUNDLED WITH
